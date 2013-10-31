@@ -8,5 +8,5 @@ EventLab.button1 = document.getElementById('button1');
 
 // register button1 click handler.
 // EventLab.registerEventHandler(
-gaQuery.registerEventHandler(EventLab.button1, "click", function(event){gaQuery.showEvent(event);});
+registerEventHandler(button1, "click", function(event){showEvent(event);});	
 
