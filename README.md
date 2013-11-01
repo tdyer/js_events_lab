@@ -15,8 +15,17 @@
   * image_attributes.html
   * on_load.html
 
-# Step threeo
+# Step three
   * index.html
+
+# Step four
+  Let's look at the this point and how it may be difficult to deal with in 
+  an event handler.
+  * event_this.html
+  * Need to understand this and bind!!!
+  *[Javascript this] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+  * event_this.html
+
 
 ## References
    * [Event Flow (bubbling)](http://www.w3.org/TR/DOM-Level-3-Events/#event-flow)
