@@ -6,7 +6,11 @@
 </head>
 <body>
   <p>
-  <button type="button" id="button1" style="font-size: 150%;">The Button</button>(This button's id is 'button1'.)
+  <button onclick="alert(this.tagName.toLowerCase());">Show this</button>
+<!-- This is an inline event handler. Try to avoid. -->
+<!-- <button type="button" id="button1" style="font-size: 150%;" onclick="alert('you clicked da button'); return false;">The Button</button>
+-->
+   <button type="button" id="button1" style="font-size: 150%;">The Button</button>(This button's id is 'button1'.)
   </p>
   <p>
     <input id='text1' type="text" id="textfield" style="font-size: 150%;"/> ('textfield')
