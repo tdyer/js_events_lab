@@ -14,10 +14,12 @@ var unregisterEventHandler = function(node, event, handler) {
 		node.removeEventListener(event, handler, false);
 	}
 	else{
+	// IE version.
 		node.detachEvent("on" + event, handler);
 	}
 };
 
+// Logging functions
 var show = function(msg){
 	(LogLevel === 'debug' || LogLevel == 'info') && console.log(msg);
 	LogLevel === 'debug' && alert(msg);
@@ -42,4 +44,24 @@ function reportClick(event) {
   show("Mouse clicked at ", pageX, ", ", pageY,
         ". Inside element:");
   showEvent(event);
+};
+
+
+function stopEvent(event) {
+	event.stopPropagation();
+};
+
+function printKeyCode(event) {
+  event = event || window.event;
+  show("Key " + event.keyCode, + "was pressed.");
+};
+
+function printCharacter(event) {
+  event = event || window.event;
+  var charCode = event.charCode;
+  if (charCode == undefined || charCode === 0)
+    charCode = event.keyCode;
+  show("Character '" + String.fromCharCode(charCode) + "'");
 }
+
+
