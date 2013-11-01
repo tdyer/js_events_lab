@@ -22,8 +22,9 @@
   Let's look at the this point and how it may be difficult to deal with in 
   an event handler.
   * event_this.html
-  * Need to understand this and bind!!!
-  *[Javascript this] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+  * Need to understand javascript, scope, this, call, apply and bind!!!
+  * [Javascript this] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+  * [Binding scope in Javascript](http://www.robertsosinski.com/2009/04/28/binding-scope-in-javascript/)
   * event_this.html
 
 

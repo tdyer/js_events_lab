@@ -2,9 +2,13 @@
 <html>
   <head>
     <script>
+      <!-- Why don't we have to put this script at the end of the 
+        body tag? ->
       function changetext(id)
       {
-      id.innerHTML="Ooops!";
+        // Note: set a breakpoint here and look at this pointer.
+        debugger;
+        id.innerHTML="Ooops!";
       }
     </script>
   </head>
