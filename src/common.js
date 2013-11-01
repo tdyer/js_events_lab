@@ -29,3 +29,17 @@ var showEvent = function(event){
 	show("current target is " + event.currentTarget.outerHTML);
 	show("x and y coordinates are x = " + event.x + ", y = " + event.y);
 };
+
+function reportClick(event) {
+  event = event || window.event;
+  var target = event.target || event.srcElement;
+  var pageX = event.pageX, pageY = event.pageY;
+  if (pageX == undefined) {
+    pageX = event.clientX + document.body.scrollLeft;
+    pageY = event.clientY + document.body.scrollTop;
+  }
+
+  show("Mouse clicked at ", pageX, ", ", pageY,
+        ". Inside element:");
+  showEvent(event);
+}

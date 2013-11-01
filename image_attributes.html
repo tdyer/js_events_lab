@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Modifying an image border</title>
+
+<script src='src/set_border_width.js'></script>
+</head>
+
+<body>
+<p>
+  <img id="img1"
+       src="images/bean_beager.jpg"
+       style="border: 5px solid green;"
+       width="100" height="100" alt="border test">
+</p>
+
+<form name="FormName">
+  <input id='button1' type="button" value="Make border 20px-wide" onclick="setBorderWidth(20);" />
+  <input id='button2' type="button" value="Make border 5px-wide"  onclick="setBorderWidth(5);" />
+</form>
+
+</body>
+</html>
