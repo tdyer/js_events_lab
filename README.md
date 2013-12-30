@@ -3,7 +3,7 @@
   * Getting the event object
   * Extracting info from the event object
   * Signalling that an event has been handled
-  
+
 # Step one
   * simple_onclick.html
   * simple2_onclick.html
@@ -34,7 +34,7 @@
  Log, to the console, all the characters entered in the text box.
 
 # Step four
-  Let's look at the this point and how it may be difficult to deal with in 
+  Let's look at the this point and how it may be difficult to deal with in
   an event handler.
   * event_this.html
   * Need to understand javascript, scope, this, call, apply and bind!!!

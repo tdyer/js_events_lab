@@ -13,6 +13,10 @@ EventLab.setup = function(){
 
 // registerEventHandler(document, "load", EventLab.setup);
 
-// DOES NOT WORK, this is WRONG!!!
-registerEventHandler(button1, "click", EventLab.person.showAgeWhen.bind(EventLab.person));
-//registerEventHandler(button1, "click", EventLab.person.showAgeWhen.bind(EventLab.person));
+// DOES NOT WORK, "this" pointer is WRONG!!!. The this pointer will be for the element that
+// recieved the click event.
+registerEventHandler(button1, "click", EventLab.person.showAgeWhen);
+
+// Works because we are using the bind method to set the 'this' pointer in the callback to be
+// the person we created above!
+// registerEventHandler(button1, "click", EventLab.person.showAgeWhen.bind(EventLab.person));
